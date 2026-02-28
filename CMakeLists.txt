@@ -14,15 +14,19 @@ add_subdirectory(libs/SFML)
 
 
 set(SOURCES 
-    main.cpp 
-    Map.cpp 
-    Screen.cpp
-    Map.h
-    Screen.h
-    Consts.h
+    src/main.cpp 
+    src/Map.cpp 
+    src/Screen.cpp
+    inc/Map.h
+    inc/Screen.h
+    inc/Consts.h
 )
 
+
+
 add_executable(${PROJECT_NAME} ${SOURCES})
+
+target_include_directories(${PROJECT_NAME} PRIVATE inc)
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 

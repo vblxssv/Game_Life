@@ -16,7 +16,6 @@ int main() {
         screen.window().close();
     });
 
-
     while (screen.isOpen()) {
         screen.processEvents();
         map.updateMap();
