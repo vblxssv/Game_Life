@@ -35,3 +35,20 @@ int main() {
 
     return 0;
 }
+
+//int main()
+//{
+//    Screen screen(consts::WIDTH, consts::HEIGHT);
+//
+//    screen.regCallBack(sf::Event::Closed, [&](sf::Event e) {
+//        screen.window().close();
+//    });
+//
+//    while (screen.isOpen())
+//    {
+//        screen.processEvents();
+//        screen.window().clear();
+//        screen.window().display();
+//    }
+//    return 0;
+//}

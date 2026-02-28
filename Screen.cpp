@@ -1,13 +1,10 @@
 #include "Screen.h"
 
 
-
-
-
 void Screen::setFps(const unsigned int& fps)
 {
 	_window.setFramerateLimit(fps);
-}
+        }
 
 bool Screen::isOpen()
 {

@@ -14,7 +14,7 @@ class Map
 {
 private:
     std::vector<std::vector<std::shared_ptr<sf::RectangleShape>>> _map;
-	int _w, _h; // количество пикселей
+	int _w, _h;
 public:
 	Map(int width, int height);
 

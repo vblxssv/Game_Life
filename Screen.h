@@ -9,8 +9,8 @@
 class Screen
 {
 private:
-	int _width, _height;
-	sf::RenderWindow _window;
+    int _width, _height;
+    sf::RenderWindow _window;
 	sf::Event _event;
 	std::map<sf::Event::EventType, std::vector<std::function<void(const sf::Event&)>>> _eventCallbacks;
 
@@ -21,12 +21,12 @@ public:
 
 	void setFps(const unsigned int& fps);
 
-	bool isOpen();
+    bool isOpen();
 
-	void processEvents();
+    void processEvents();
 
 	void regCallBack(const sf::Event::EventType& et, const std::function<void(const sf::Event&)>& func);
 
-	sf::RenderWindow& window() { return _window; }
+    sf::RenderWindow& window() { return _window; }
 };
 
